@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+body {
+    background: url('imagini/fundal7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+}
+
+.page-grid {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 990px 1fr;
+    grid-template-areas:
+        ". container ."
+        ". footer .";
+}
+
+.container {
+    grid-area: container;
+    background: white;
+    padding: 30px 20px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 6px #2b82c0;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.footer {
+    grid-area: footer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 4px #ccc;
+    border-radius: 4px;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.menu {
+    width: 990px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+}
+
+.menu--light {
+    margin: 30px auto 0 auto;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 10px 40px 10px 40px;
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    color: #888;
+    vertical-align: bottom;
+}
+.menu-item-active {
+    position: relative;
+    bottom: -1px;
+    color: #48b0f1;
+    padding: 15px 40px 15px 40px;
+    margin-top: 0;
+}
+
+.title {
+    color:#f1f1f1;
+    background-color: #73d10068;
+    margin: 0;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    color: #000000;
+    background-color: #73d10068;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+.header {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 25px 0;
+    border: 1px solid #f1f1f1;
+}
+
+@media (max-width: 990px) {
+    .menu {
+        width: 100%;
+    }
+    .page-grid {
+        display: block;
+    }
+    .footer {
+        border-radius: 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+    .header {
+        display: none;
+    }
+    .footer {
+        margin-top: 3px;
+    }
+}
+
+.food_drinks-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.food_drinks-item{
+    width: calc(33% - 12px);
+
+    margin-bottom: 20px;
+}
+@media (max-width: 990px) {
+    .food_drinks-item{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 990px) {
+    .food_drinks-item{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .food_drinks-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
